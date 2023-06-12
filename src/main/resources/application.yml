@@ -9,6 +9,18 @@ spring:
       maximum-pool-size: 15
       minimum-idle: 5
       idle-timeout: 30000
+  # Mail Properties
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 2188342075@qq.com
+    password: 13630159833q
+    protocol: smtps
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
 mybatis:
   #  配置扫描
   mapper-locations: classpath:mapper/*.xml
@@ -20,6 +32,15 @@ mybatis:
 server:
   servlet:
     context-path: /community
+
 logging:
   level:
     com.yueding.community: DEBUG
+
+#community
+community:
+  path:
+    domain: http://localhost:8080
+
+
+
